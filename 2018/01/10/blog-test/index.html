@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="=====this is my first bolg">
+<meta name="description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
 <meta property="og:type" content="article">
-<meta property="og:title" content="blog_test">
+<meta property="og:title" content="macOS + Github + Hexo搭建Blog">
 <meta property="og:url" content="http://yoursite.com/2018/01/10/blog-test/index.html">
 <meta property="og:site_name" content="Vermouth&#39;s Blog">
-<meta property="og:description" content="=====this is my first bolg">
+<meta property="og:description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-04T02:32:45.419Z">
+<meta property="og:updated_time" content="2018-02-04T08:39:19.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="blog_test">
-<meta name="twitter:description" content="=====this is my first bolg">
+<meta name="twitter:title" content="macOS + Github + Hexo搭建Blog">
+<meta name="twitter:description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
 
 
 
@@ -139,7 +139,7 @@
 
 
 
-  <title>blog_test | Vermouth's Blog</title>
+  <title>macOS + Github + Hexo搭建Blog | Vermouth's Blog</title>
   
 
 
@@ -289,7 +289,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">blog_test</h1>
+          <h1 class="post-title" itemprop="name headline">macOS + Github + Hexo搭建Blog</h1>
         
 
         <div class="post-meta">
@@ -339,7 +339,71 @@
       
 
       
-        <p>=====<br>this is my first bolg</p>
+        <p>##搭建Blog</p>
+<p><strong>安装前准备</strong></p>
+<ul>
+<li>Node.js</li>
+<li>Git</li>
+</ul>
+<blockquote>
+<p>安装Hexo</p>
+<p>   <code>$ npm install -g hexo-cli</code></p>
+</blockquote>
+<p><strong>正式安装</strong></p>
+<blockquote>
+<p>进入需要安装的目录</p>
+<p>e.g.    <code>cd ./blog</code></p>
+<p>对blog文件夹进行hexo初始化</p>
+<p><code>hexo init</code></p>
+<p>安装依赖包</p>
+<p><code>npm install</code></p>
+<p>新建完成后，指定文件夹的目录如下：</p>
+<p>`.</p>
+<p>├── _config.yml</p>
+<p>├── package.json</p>
+<p>├── scaffolds</p>
+<p>├── source</p>
+<blockquote>
+<p>  ├── _drafts</p>
+<p>  └── _posts</p>
+</blockquote>
+<p>└── themes`</p>
+</blockquote>
+<p><strong>生成静态资源</strong></p>
+<blockquote>
+<p>生成静态页面</p>
+<p><code>hexo generate</code> 或者 <code>hexo g</code></p>
+<p>本地启动</p>
+<p><code>hexo server</code> 或者 <code>hexo s</code></p>
+</blockquote>
+<p><strong>上传GitHub</strong></p>
+<blockquote>
+<p>配置 _config.yml 文件</p>
+<p>找到delop字样，之后改为：</p>
+<pre><code>deploy:                                         
+  type: git 
+  repo: https://github.com/用户名/用户名.github.io.git 
+  branch: master
+</code></pre><p>需要注意的是：冒号后面有一个空格；使用github可以不用写branch那一行。</p>
+<p>同步到GitHub，执行</p>
+<p><code>hexo deploy</code> 或者 <code>hexo d</code></p>
+</blockquote>
+<p><strong>每次依次执行</strong></p>
+<blockquote>
+<pre><code>hexo clean   
+hexo generate
+hexo deploy
+</code></pre></blockquote>
+<p><strong>参考：</strong></p>
+<p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo文档</a></p>
+<p><a href="http://volcfamily.cn/2016/10/03/Hexo之NexT主题搭建博客详细过程/" target="_blank" rel="noopener">Hexo之NexT主题搭建博客详细过程</a></p>
+<p>##创建博客</p>
+<blockquote>
+<p>你可以执行下列命令来创建一篇新文章</p>
+<p><code>$ hexo new [layout] &lt;title&gt;</code></p>
+<p>语法参考<a href="(https://www.appinn.com/markdown/)">Markdown语法说明</a></p>
+</blockquote>
+<p>##优化——以使用next主题为例<br>to be continued</p>
 
       
     </div>
@@ -360,22 +424,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/02/04/使用/" rel="prev" title="使用">
-                使用 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -440,32 +488,14 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
           
 
           
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
 
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
           
 
         </nav>
