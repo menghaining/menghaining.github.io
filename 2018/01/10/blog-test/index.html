@@ -94,17 +94,17 @@
 
 
 
-<meta name="description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
+<meta name="description" content="搭建Blog安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json ├─">
 <meta property="og:type" content="article">
 <meta property="og:title" content="macOS + Github + Hexo搭建Blog">
 <meta property="og:url" content="http://yoursite.com/2018/01/10/blog-test/index.html">
 <meta property="og:site_name" content="Vermouth&#39;s Blog">
-<meta property="og:description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
+<meta property="og:description" content="搭建Blog安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json ├─">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-04T08:39:19.465Z">
+<meta property="og:updated_time" content="2018-02-04T08:45:18.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="macOS + Github + Hexo搭建Blog">
-<meta name="twitter:description" content="##搭建Blog 安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json">
+<meta name="twitter:description" content="搭建Blog安装前准备  Node.js Git   安装Hexo    $ npm install -g hexo-cli  正式安装  进入需要安装的目录 e.g.    cd ./blog 对blog文件夹进行hexo初始化 hexo init 安装依赖包 npm install 新建完成后，指定文件夹的目录如下： `. ├── _config.yml ├── package.json ├─">
 
 
 
@@ -339,8 +339,7 @@
       
 
       
-        <p>##搭建Blog</p>
-<p><strong>安装前准备</strong></p>
+        <h1 id="搭建Blog"><a href="#搭建Blog" class="headerlink" title="搭建Blog"></a>搭建Blog</h1><p><strong>安装前准备</strong></p>
 <ul>
 <li>Node.js</li>
 <li>Git</li>
@@ -397,13 +396,12 @@ hexo deploy
 <p><strong>参考：</strong></p>
 <p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="noopener">Hexo文档</a></p>
 <p><a href="http://volcfamily.cn/2016/10/03/Hexo之NexT主题搭建博客详细过程/" target="_blank" rel="noopener">Hexo之NexT主题搭建博客详细过程</a></p>
-<p>##创建博客</p>
-<blockquote>
+<h1 id="创建博客"><a href="#创建博客" class="headerlink" title="创建博客"></a>创建博客</h1><blockquote>
 <p>你可以执行下列命令来创建一篇新文章</p>
 <p><code>$ hexo new [layout] &lt;title&gt;</code></p>
 <p>语法参考<a href="(https://www.appinn.com/markdown/)">Markdown语法说明</a></p>
 </blockquote>
-<p>##优化——以使用next主题为例<br>to be continued</p>
+<h1 id="优化——以使用next主题为例"><a href="#优化——以使用next主题为例" class="headerlink" title="优化——以使用next主题为例"></a>优化——以使用next主题为例</h1><p>to be continued</p>
 
       
     </div>
@@ -472,8 +470,17 @@ hexo deploy
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/pho1.png"
@@ -506,10 +513,10 @@ hexo deploy
           
             
               <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/menghaining/activities" target="_blank" title="zhihu">
+                <a href="https://www.zhihu.com/people/menghaining/activities" target="_blank" title="知乎">
                   
                     
-                      zhihu
+                      知乎
                     
                 </a>
               </span>
@@ -528,6 +535,22 @@ hexo deploy
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建Blog"><span class="nav-number">1.</span> <span class="nav-text">搭建Blog</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建博客"><span class="nav-number">2.</span> <span class="nav-text">创建博客</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#优化——以使用next主题为例"><span class="nav-number">3.</span> <span class="nav-text">优化——以使用next主题为例</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
